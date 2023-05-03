@@ -36,21 +36,21 @@ body{
 .doodles{
     position: absolute;
     bottom: 5%;
-    left: 5%;
-    width: 25vw;
+    left: 10%;
+    width: 20vw;
     transition: 0.5s;
 }
 h1{
     font-family: 'Encode Sans Expanded', sans-serif;
     color: #0b2027;
     text-align: right;
-    font-size: 25pt;
+    font-size: 30pt;
 }
 h2{
     font-family: 'Encode Sans Expanded', sans-serif;
     color: #3f8c60;
     text-align: right;
-    font-size: 20pt;
+    font-size: 25pt;
 }
 a{
     text-decoration: none;
@@ -59,7 +59,7 @@ h3{
     font-family: 'Encode Sans Expanded', sans-serif;
     color: #0b2027;
     text-align: right;
-    font-size: 14pt;
+    font-size: 15pt;
     margin-bottom: 8px;
 }
 h3:hover{
@@ -86,14 +86,14 @@ h3:active{
 .project-entry{
     background-color: #0b2027;
     width: 100%;
-    height: 15vw;
+    height: 17vw;
     margin-bottom: 3vw;
     background-size: cover;
     background-position-y: center;
     background-clip: border-box;
-    filter: saturate(70%);
+    filter: saturate(50%);
     transition-property: background-image;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 .project-entry:hover{
     filter: saturate(100%);
@@ -105,7 +105,7 @@ h3:active{
 .title-wrapper{
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .title-wrapper:hover{
     opacity: 0;
@@ -141,5 +141,23 @@ h3:active{
     background-image: url(../images/foundation-thumbnail.jpg);
 }
 .project-entry.foundation:hover{
-    background-image: url(../images/foundation.gif);
+    background-image: url(../images/foundation-gif.gif);
+}
+.title.gong{
+    background-image: url(../images/gong-logo.png);
+}
+.project-entry.gong{
+    background-image: url(../images/gong-thumbnail.jpg);
+}
+.project-entry.gong:hover{
+    background-image: url(../images/gong-gif.gif);
+}
+.title.dive{
+    background-image: url(../images/dive-logo.png);
+}
+.project-entry.dive{
+    background-image: url(../images/dive-thumbnail.jpg);
+}
+.project-entry.dive:hover{
+    background-image: url(../images/dive-gif.gif);
 }
