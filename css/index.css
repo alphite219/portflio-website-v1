@@ -4,13 +4,16 @@
 body{
     background-color: #fbf8e0;
 }
-#side-bar{
+.side-bar{
     background-color: #cfd7c7;
     margin-left: 0;
     margin-right: auto;
     width: 30%;
     height: 100vh;
     position:fixed
+}
+#noscroll1{
+    width: 29.75%;
 }
 #menu{
     display: block;
@@ -22,7 +25,7 @@ body{
 }
 #side-bar-menu{
     float: right;
-    margin-top: 8vh;
+    margin-top: 5vh;
     margin-right: 25px;
 }
 #title{
@@ -79,6 +82,12 @@ h3:active{
     margin-right: 15%;
     width: 50%;
 }
+#notscrollable{
+    background-color: #fbf8e0;
+    margin-left: auto;
+    margin-right: 15.25%;
+    width: 49.75%;
+}
 .filler{
     width: 100%;
     margin-left: auto;
@@ -99,13 +108,14 @@ h3:active{
     filter: saturate(100%);
 }
 #spacer{
-    height: 8vh;
+    height: 5vh;
     background-color: #fbf8e0;
 }
 .title-wrapper{
     width: 100%;
     height: 100%;
     transition: 0.2s;
+    position: relative;
 }
 .title-wrapper:hover{
     opacity: 0;
