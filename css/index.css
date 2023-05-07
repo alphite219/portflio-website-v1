@@ -8,12 +8,12 @@ body{
     background-color: #cfd7c7;
     margin-left: 0;
     margin-right: auto;
-    width: 30%;
+    width: 25%;
     height: 100vh;
     position:fixed
 }
 #noscroll1{
-    width: 29.75%;
+    width: 24.75%;
 }
 #menu{
     display: block;
@@ -47,13 +47,15 @@ h1{
     font-family: 'Encode Sans Expanded', sans-serif;
     color: #0b2027;
     text-align: right;
-    font-size: 30pt;
+    font-size: 28pt;
+    user-select: none;
 }
 h2{
     font-family: 'Encode Sans Expanded', sans-serif;
     color: #3f8c60;
     text-align: right;
-    font-size: 25pt;
+    font-size: 22pt;
+    user-select: none;
 }
 a{
     text-decoration: none;
@@ -64,12 +66,44 @@ h3{
     text-align: right;
     font-size: 15pt;
     margin-bottom: 8px;
+    user-select: none;
 }
 h3:hover{
     color: #70a98a;
 }
 h3:active{
     color: #3f8c60;
+}
+p{
+    font-family: 'Encode Sans Expanded', sans-serif;
+    color: #0b2027;
+    font-size: 12pt;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 22px;
+}
+b{
+    color: #3f8c60;
+}
+.selected{
+    color: #3f8c60;
+}
+.centered{
+    text-align: center;
+    display: block;
+    border-style: none none solid none;
+    border-color: #3f8c60;
+}
+.about-image{
+    max-width:22vw;
+    max-height:34vw;
+    width: ;
+    height: auto
+}
+.about-content{
+    display: flex;
+    background-color: #cfd7c7;
+    padding: 20px;
 }
 .logo{
     margin-top: 10px;
@@ -84,9 +118,10 @@ h3:active{
 }
 #notscrollable{
     background-color: #fbf8e0;
-    margin-left: auto;
-    margin-right: 15.25%;
-    width: 49.75%;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 5%;
+    width: 65%;
 }
 .filler{
     width: 100%;
