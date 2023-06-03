@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div class="side-bar" id="noscroll1">
+    <div class="side-bar">
         <div id="side-bar-menu">
             <div id="title">
                 <div id="title-text">
@@ -38,24 +38,35 @@
                 <a href="index.html"><h3 class="menu-button">Game Design</h3></a>
                 <a href="index.html"><h3 class="menu-button">Personal Projects</h3></a>
                 <h3 class="menu-button selected">About Me</h3>
-                <a href="index.html"><h3 class="menu-button">Contact</h3></a>
-                <a href="index.html"><h3 class="menu-button">Links</h3></a>
+                <div class="link-logo-menu">
+                    <a>
+                        <div class="link-logo linkedIn"></div>
+                    </a>
+                    <a>
+                        <div class="link-logo linkTree"></div>
+                    </a>
+                    <div class="link-logo email" onclick="copyEmail()" onmouseout="outFunc()">
+                        <div class="tooltip">
+                            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="doodle">
             <img  class="doodles" src="images/drawing-doodle.gif" alt="A doodle of me sat down drawing... very meta">
         </div>
     </div>
-    <div id="notscrollable">
+    <div id="fullWidthScrollable">
         <div id="spacer"></div>
         <div class="about-container">
             <h1 class="centered">ABOUT ME</h1>
             <div id="spacer"></div>
             <div class="about-content">
-                <p>Well damn if you made it all the way over here then I'm doing a good job. <br><br> 
-                    Hi! my name is Alfie, I'm a <b>game designer</b>. I love making things that bring smiles to people's faces and that will give them expiriences they'll never forget. If you'll allow me to be dramatic for a moment, <b>stories</b> are the thing that drives me. Be it some teenagers telling their classmates about how they beat a boss the night before, or a group of friends working together to make an epic tale around their dinner table using dice, paper and imagination. Telling stories and hearing them is the thing that inspires me and gets me out of bed in the morning. It's a thing that's so uniquely human, everyone has stories to tell and in some way, loves to listen to them. <br><br>
-                    Anyhow, that's why I love game design. Of course, I am a hopeless magpie and life is shiny, so I have rudimentary knowledge and skills in basically everything, but I am a specialist in <b>UX</b>. <b>Particle effects</b>, <b>level design</b>, moment to moment <b>gameplay</b> , <b>menus</b> and <b>tech art</b> are my bread and butter. I focus more heavily on <b>Unreal Engine</b> as my chosen Medium, but I know how to use <b>Unity</b> to a professional degree as well. I have a good well of coding knowledge, and can work comfortably in <b>JS</b>, <b>C#</b>, <b>CSS</b>, <b>HTML</b> and <b>Blueprint</b>. I'm familiar with <b>github</b> and source control engines, and can use the <b>microsoft suite</b> along with most of <b>Adobe's creative cloud</b>.  <br><br>
-                    As far as soft skills go, I <b>work well in a team</b> and have <b>lead</b> several <b>game jams</b> and other projects, both short term and long term. I'm great at <b>multitasking</b>, and can comfortably switch around between different tasks and mediums. I'm also almost always <b>looking to learn</b> new things and develop myself, both personally and professionally. My love for making things spills over into practical work too, most of which can be seen in my personal projects section. I have a fondness for <b>prop making</b> and <b>costume design</b> especially, being quite skilled in <b>sewing</b>, <b>woodworking</b>, <b>model making</b> and painting. Be it origami, foley, forging or Digital 3D though, I'm almost always chasing some new skill or ability. In my free time, I continue to tell stories at my table, having run regular tabletop sessions for the past seven years or so, and to look after myself, I go rock climbing around twice a week. (I wonder if you can tell)
+                <p>Well damn, if you made it all the way over here then I'm doing a good job! <br><br> 
+                    Hi! my name is Alfie, I'm a <b>game designer</b>. I love making things that bring smiles to people's faces and that will give them experiences they'll never forget. If you'll allow me to be dramatic for a moment, <b>stories</b> are the thing that drives me: Be it some teenagers telling their classmates about how they beat a boss the night before, or a group of friends working together to make an epic tale around their dinner table using dice, paper and imagination. Telling stories and hearing them is the thing that inspires me and gets me out of bed in the morning. It's a thing that's so uniquely human, everyone has stories to tell and in some way, loves to listen to them. <br><br>
+                    Anyhow, that's why I love game design. Of course, I am a hopeless magpie and life is shiny, so I have rudimentary knowledge and skills in basically everything, but I am a specialist in <b>UX</b>. <b>Particle effects</b>, <b>level design</b>, moment to moment <b>gameplay</b> , <b>menus</b> and <b>tech art</b> are my bread and butter. I focus more heavily on <b>Unreal Engine</b> as my chosen medium, but I know how to use <b>Unity</b> to a professional degree as well. I have a good well of coding knowledge, and can work comfortably in <b>JS</b>, <b>C#</b>, <b>CSS</b>, <b>HTML</b> and <b>Blueprint</b>. I'm familiar with <b>github</b> and source control engines, and can use the <b>Microsoft Suite</b> along with most of <b>Adobe's Creative Cloud</b>.  <br><br>
+                    As far as soft skills go, I <b>work well in a team</b> and have <b>lead</b> several <b>game jams</b> and other projects, both short term and long term. I'm great at <b>multitasking</b>, and can comfortably switch around between different tasks and mediums. I'm also almost always <b>looking to learn</b> new things and develop myself, both personally and professionally. My love for making things spills over into practical work too, most of which can be seen in my personal projects section. I have a fondness for <b>prop making</b> and <b>costume design</b> especially, being quite skilled in <b>sewing</b>, <b>woodworking</b>, <b>model making</b> and <b>painting</b>. Be it <b>origami</b>, <b>foley</b>, <b>forging</b> or <b>Digital 3D</b> though, I'm almost always chasing some new skill or ability. In my free time, I continue to tell stories at my table, having run regular <b>tabletop</b> sessions for the past seven years or so, and to look after myself, I go rock <b>climbing</b> around twice a week (I wonder if you can tell!)
                 </p>
                 <img class="about-image"  src="images/about-image.png">
             </div>

@@ -2,6 +2,7 @@ const doodle = document.getElementsByClassName("doodles")[0]
 const astral = document.getElementById("astral")
 const foundation = document.getElementById("foundation")
 const gong = document.getElementById("gong")
+const emailButton = document.getElementById("emailButton")
 
 let currentDoodle
 let rotateInterval
@@ -52,3 +53,16 @@ function rotate(){
         doodle.style.transform = "rotate(" + rotation + "deg)"
     }
 }
+
+function copyEmail() {
+    var copyText = "alfiewright219@gmail.com";
+    navigator.clipboard.writeText(copyText);
+    
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied!";
+  }
+  
+  function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+  }
